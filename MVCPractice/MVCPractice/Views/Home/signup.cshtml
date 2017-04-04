@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>signup</title>
+    <link href="~/CSS/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th>
+                <div class="container">
+
+                    <form id="signup">
+
+                        <div class="header">
+
+                            <h3 style="text-align:center">Create an Account</h3><hr />
+                            <br />
+                        </div>
+
+                        <div class="sep"></div>
+
+                        <div class="inputs">
+
+                            <input type="text" placeholder="Name" autofocus />
+
+                            <input type="email" placeholder="e-mail" autofocus />
+
+                            <input type="password" placeholder="Password" />
+
+                            <div class="checkboxy">
+                                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the <a href="#">terms and condition</a></label>
+                            </div>
+
+                            <a id="submit" href="#">Register</a>
+
+                        </div>
+
+                    </form>
+            </th>
+        </tr>
+        <tr>
+            <th>
+            <td>
+                <div style="position:static">
+                    @Html.Partial("partial1")
+                </div>
+            </td>
+            </th>
+        </tr>
+        
+    </table>
+   
+</body>
+</html>
